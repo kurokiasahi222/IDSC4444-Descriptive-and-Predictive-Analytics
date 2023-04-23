@@ -1,0 +1,13 @@
+"0","train_set_stand <- train_set"
+"0","test_set_stand <- test_set"
+"0","library(standardize)"
+"2","
+ *********************************************************** 
+          Loading standardize package version 0.2.2          
+     Call standardize.news() to see new features/changes     
+ *********************************************************** 
+
+"
+"0","#Apply the standardization"
+"0","train_set_stand[,2:7] <- apply(train_set_stand[,2:7], MARGIN = 2, FUN = scale)"
+"0","test_set_stand[,2:7] <- apply(test_set_stand[,2:7], MARGIN = 2, FUN = scale)"

@@ -1,0 +1,28 @@
+{
+    "id": "DC3550DF",
+    "path": "~/Desktop/University of Minnesota/Fall2021/IDSC 4444/hw/hw3/hw3.R",
+    "project_path": "hw3.R",
+    "type": "r_source",
+    "hash": "2840287502",
+    "contents": "",
+    "dirty": false,
+    "created": 1636844789505.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "69,0",
+        "scrollLine": "0",
+        "ignored_words": "outliers\n",
+        "notebook_format": "pdf_document",
+        "docOutlineVisible": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1637538029,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1637538029927,
+    "read_only": false,
+    "read_only_alternatives": []
+}

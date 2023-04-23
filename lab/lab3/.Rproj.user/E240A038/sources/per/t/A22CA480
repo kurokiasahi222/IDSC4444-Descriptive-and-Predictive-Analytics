@@ -1,0 +1,32 @@
+{
+    "id": "A22CA480",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1636923467023.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "expression": "as.matrix(distance_matrix_norm)",
+        "caption": "as.matrix(distance_matrix_norm)",
+        "totalObservations": 51,
+        "displayedObservations": 51,
+        "variables": 51,
+        "cacheKey": "E996EB45",
+        "object": "",
+        "environment": "_rs_no_env",
+        "contentUrl": "grid_resource/gridviewer.html?env=_rs_no_env&obj=&cache_key=E996EB45&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 140642848144112,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1636923467023,
+    "read_only": false,
+    "read_only_alternatives": []
+}

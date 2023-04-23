@@ -1,0 +1,32 @@
+{
+    "id": "E62741B2",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1638136318624.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "data_train_stand",
+        "caption": "data_train_stand",
+        "totalObservations": 5185,
+        "displayedObservations": 5185,
+        "variables": 17,
+        "cacheKey": "7642CCFE",
+        "object": "data_train_stand",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=data_train_stand&cache_key=7642CCFE&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 163208757262,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1638136318624,
+    "read_only": false,
+    "read_only_alternatives": []
+}

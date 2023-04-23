@@ -1,0 +1,8 @@
+Juice,Bread,Butter,Ice Cream
+Cereal,Juice,Milk
+Bread,Cereal,Ice Cream,Milk
+Bread,Butter,Cereal,Cheese,Juice
+Bread,Ice Cream,Juice
+Bread,Cheese,Juice,Milk,
+Ice Cream,Milk
+Cereal,Juice

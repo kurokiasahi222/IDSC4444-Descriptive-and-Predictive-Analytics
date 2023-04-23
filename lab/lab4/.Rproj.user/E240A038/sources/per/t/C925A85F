@@ -1,0 +1,32 @@
+{
+    "id": "C925A85F",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1638138029881.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "data_test_stand",
+        "caption": "data_test_stand",
+        "totalObservations": 898,
+        "displayedObservations": 898,
+        "variables": 18,
+        "cacheKey": "55758272",
+        "object": "data_test_stand",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=data_test_stand&cache_key=55758272&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 8030879312480528756,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1638138029881,
+    "read_only": false,
+    "read_only_alternatives": []
+}

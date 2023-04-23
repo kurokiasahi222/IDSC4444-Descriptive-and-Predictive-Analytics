@@ -1,0 +1,5 @@
+"0","min_max_norm = function(x){"
+"0","  return ((x - min(x))/(max(x) - min(x)))}"
+"0","telco_norm <-telco_data"
+"0","norm_column <- c(2:15)"
+"0","telco_norm[, norm_column] <- apply(telco_norm[, norm_column], MARGIN = 2, FUN = min_max_norm)"

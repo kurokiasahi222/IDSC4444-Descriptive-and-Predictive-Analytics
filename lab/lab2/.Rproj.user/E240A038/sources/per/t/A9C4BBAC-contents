@@ -1,0 +1,109 @@
+# Association Rule Mining in R
+# We need to load the arules package
+library(arules)
+#---------------------------------------------------------------------------------#
+
+# In the first exercise, we use the "supermarket.csv" file
+# This dataset contains 8 shopping basksets
+
+# P1: Import this dataset as transaction data
+# Think about parameters including format, sep, and rm.duplicates
+# Write your code below:
+
+supermarket <- read.transactions(file = "supermarket.csv",format = "basket",sep = ",")
+inspect(supermarket)
+#---------------------------------------------------------------------------------#
+
+# P2: Understand the supermarket data
+# Which unique items are there in all shopping baskets?
+# Write your code below:
+
+itemInfo(supermarket)
+#---------------------------------------------------------------------------------#
+
+# P3: Understand the supermarket data
+# How many transactions contain purchase of Butter?
+# Write your code below:
+
+subset(supermarket,items %in% c("Butter"))
+
+#How many transactions contain purchase of Butter And Cheese?
+
+subset(supermarket,items %ain% c("Butter", "Cheese"))
+#---------------------------------------------------------------------------------#
+
+# P4: Understand the supermarket data
+# Plot the support percentage of each item, for the top 4 items
+# Write your code below:
+
+itemFrequencyPlot(supermarket, ylim = c(0, 1), main = 
+                    "Support %", col = "red", topN = 4)
+#---------------------------------------------------------------------------------#
+
+# P6: Mine association rules
+# Find all association rules with minsupp = 0.375 and minconf = 0.65, minlen = 2
+# Write your code below:
+
+supermarket_rules <- apriori(supermarket,parameter = list(support=0.375,confidence=0.65, target = "rules", minlen = 2)) 
+  #---------------------------------------------------------------------------------#
+  
+  # P7: Mine association rules
+  # Inspect the found rules, in the order of decreasing lift ratio
+  # Write your code below:
+
+  inspect(sort(supermarket_rules, by = "lift"))
+  
+  #The association rule with highest lift is {ice cream} -> {bread}, with lift = 1.20
+  #That means that people who buys ice-cream are 1.2 times more likely to buy bread 
+  #than any other customer
+  #---------------------------------------------------------------------------------#
+  
+  # In the second exercise, we use the "book.csv" file
+  # This dataset contains 2000 book purchases in binary matrix format
+  
+# P1: Import this dataset as transaction data
+# Think about the three steps of importing
+# Write your code below:
+book_data_frame <- read.csv("book.csv")
+book_matrix <- as.matrix(book_data_frame)
+  book <-  as(book_matrix,Class = "transactions")
+  inspect(head(book))
+  #---------------------------------------------------------------------------------#
+  
+  # P2: Understand the book data
+  # Plot the frequency plot, using absolute count
+  # Which book category sells best? 
+  # Write your code below:
+  itemFrequencyPlot(book,type="absolute", ylim = c(0, 1000), main = "Support count", col = "steelblue3", topN = 5)
+
+  #The book category that sells best is cooking books
+  
+  #---------------------------------------------------------------------------------#
+  
+  # P3: Mine association rules
+  # Find all association rules with minsupp = 0.1 and minconf = 0.8
+# Write your code below:
+book_rules <- apriori(book,parameter = list(support=0.1,confidence=0.8, target = "rules"))  
+  #---------------------------------------------------------------------------------#
+  
+  # P4: Understand the rules found
+  # Inspect the rules, and answer the following questions:
+  # Which rule has the highest lift? What does it tell us?
+  # What can be done with this rule, if you were the bookstore manager?
+  # Write your code below:
+  inspect(sort(book_rules,by="lift"))
+  
+  #The rule with the highest lift is ItalCook -> CookBks, with lift = 2.32
+  #That means that people who buy the book about Italian Cooking are 2.32 times 
+  #more likely to buy a cooking book than other customers
+  
+  #P5: Plot the rules using arulezViz
+  #Load the package arulesViz, plot a graph of the rules
+  
+  library(arulesViz)
+  plot(book_rules, method = "graph")
+  
+  #Finally, plot a scatterplot, where the shading changes depending on the confidence
+  plot(book_rules, measure = c("support", "lift"), shading = "confidence")
+  #---------------------------------------------------------------------------------#
+  

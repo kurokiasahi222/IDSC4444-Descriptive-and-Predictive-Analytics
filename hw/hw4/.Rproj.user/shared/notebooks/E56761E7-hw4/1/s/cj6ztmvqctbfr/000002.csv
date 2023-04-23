@@ -1,0 +1,6 @@
+"0","train_rows <- createDataPartition(y = credit_data$DEFAULT, p =0.8, list = FALSE)"
+"0","#Create the training data using the randomly picked observations from before"
+"0","data_train <- credit_data[train_rows,]"
+"0","#Create the test data, by taking all the remaining observations that "
+"0","#were not included in data_train"
+"0","data_test <- credit_data[-train_rows, ]"

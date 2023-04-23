@@ -1,0 +1,4 @@
+"0","ggplot(data = credit_data, aes(x = DEFAULT, y = LIMIT_BAL / 1000, group = DEFAULT)) + "
+"0","  geom_boxplot(outlier.colour=""orange"", outlier.shape=2, outlier.size=3) + "
+"0","  ggtitle(""Boxplot of Credit limit by Default"") + "
+"0","  labs(x = ""Default"", y =""Credit Limit"" )"

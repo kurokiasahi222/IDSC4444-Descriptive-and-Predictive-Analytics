@@ -1,0 +1,5 @@
+"0","rect.hclust(hc, k = 4, border = 2:5)
+"
+"2","Error in rect(m[which[n]] + 0.66, par(""usr"")[3L], m[which[n] + 1] + 0.33,  : 
+  plot.new has not been called yet
+"

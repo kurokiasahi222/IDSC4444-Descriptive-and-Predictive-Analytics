@@ -1,0 +1,6 @@
+"0","ggplot(data = df, aes(cnt_bike)) + "
+"0","  xlim(0, 9000) + "
+"0","  ylim(0, 70) + "
+"0","  geom_histogram(colour = ""grey"", fill = ""black"") + "
+"0","  ggtitle(""Distrubution of the number of bike-rides"") + "
+"0","  labs(x = ""Number of bikes"")"

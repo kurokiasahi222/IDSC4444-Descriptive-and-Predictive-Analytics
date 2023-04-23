@@ -1,0 +1,18 @@
+---
+title: "hw5_practice"
+author: "Asahi (Ash) Kuroki"
+date: "12/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+x1 <- sample(1:10, 1)
+x2 <- sample(10:20, 1)
+x1
+x2
+```
+

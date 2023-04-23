@@ -1,0 +1,6 @@
+"0","ggplot(data = telco_data, aes(x= Partner_cat, y = Monthly.Charges, "
+"0","                              group = Partner_cat )) + "
+"0","  geom_boxplot(outlier.colour=""orange"", outlier.shape=2, outlier.size=3) + "
+"0","  ggtitle(""Monthly Charges by whether the customer "
+"0","          lives with a partner"") + "
+"0","  labs(x = ""Lives with a partner"", y = ""Montly Charges"")"

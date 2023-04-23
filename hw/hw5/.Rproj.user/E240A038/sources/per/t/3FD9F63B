@@ -1,0 +1,29 @@
+{
+    "id": "3FD9F63B",
+    "path": "~/Desktop/University of Minnesota/Fall2021/IDSC 4444/hw/hw5/hw5.R",
+    "project_path": "hw5.R",
+    "type": "r_source",
+    "hash": "586921567",
+    "contents": "",
+    "dirty": false,
+    "created": 1638916486057.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "15,28",
+        "scrollLine": "0",
+        "notebook_format": "html_document",
+        "ignored_words": "RegressionTree\n",
+        "Source": "Source",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1638990022,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1638990022517,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,3 @@
+"0","trainRows <- createDataPartition(y = df$cnt_bike, p = 0.8, list = FALSE)"
+"0","train_set <- df[trainRows,]"
+"0","test_set <- df[-trainRows,]"

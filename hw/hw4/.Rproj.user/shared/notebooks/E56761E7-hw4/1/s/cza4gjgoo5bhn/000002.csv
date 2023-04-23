@@ -1,0 +1,9 @@
+"0","### load required packages"
+"0","library(""caret"")"
+"2","Loading required package: ggplot2
+"
+"2","Loading required package: lattice
+"
+"0","library(""e1071"")"
+"0","library(""rpart"")"
+"0","library(""rpart.plot"")"

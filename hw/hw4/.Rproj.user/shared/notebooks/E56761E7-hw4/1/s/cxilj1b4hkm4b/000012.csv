@@ -1,0 +1,21 @@
+"0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","credit_data %>%"
+"0","  group_by(DEFAULT) %>%"
+"0","  summarize(mean = mean(LIMIT_BAL / 1000), "
+"0","            median = median(LIMIT_BAL / 1000))"
+"2","`summarise()` ungrouping output (override with `.groups` argument)
+"

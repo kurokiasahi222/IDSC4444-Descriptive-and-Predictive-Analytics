@@ -1,0 +1,32 @@
+{
+    "id": "B6596AB3",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1637538654836.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "telco_data",
+        "caption": "telco_data",
+        "totalObservations": "1149",
+        "displayedObservations": "1149",
+        "variables": "18",
+        "cacheKey": "DF7BF369",
+        "object": "telco_data",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=telco_data&cache_key=DF7BF369&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 140308828358808,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1637538654836,
+    "read_only": false,
+    "read_only_alternatives": []
+}

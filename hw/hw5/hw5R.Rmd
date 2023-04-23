@@ -1,0 +1,95 @@
+---
+title: "hw5"
+author: "Asahi (Ash) Kuroki"
+date: "12/1/2021"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup}
+knitr::opts_chunk$set(cache = TRUE)
+set.seed(123)
+```
+
+```{r}
+# import packages
+library(GGally)
+library(caret)
+library(rpart.plot)
+library(gridExtra)
+library(labelVector)
+library(tidyverse)
+```
+
+Analysis  
+  
+Processing and Visualizing data  
+a) Load the data. Get a summary of the data, report it. Use ggplot to plot a histogram for the distribution of the number of bike-rides.
+```{r}
+df <- read.csv("bike_day.csv")
+summary(df)
+```
+```{r}
+ggplot(data = df, aes(cnt_bike)) + 
+  xlim(0, 9000) + 
+  ylim(0, 70) + 
+  geom_histogram(colour = "grey", fill = "black") + 
+  ggtitle("Distrubution of the number of bike-rides") + 
+  labs(x = "Number of bikes")
+  
+```
+  
+b) Use the function pairs() to produce a plot of the relationships among count, atemp and hum.  
+```{r}
+pairs(df[,1:3], col = "darkgreen")
+```
+Comment on distribution
+
+c) (0.2) Split the data into 80% training and 20% testing.  
+```{r}
+trainRows <- createDataPartition(y = df$cnt_bike, p = 0.8, list = FALSE)
+train_set <- df[trainRows,]
+test_set <- df[-trainRows,]
+```
+
+Train a K-NN model  
+a) Decide whether you need to standardize the data or not  
+Yes. We need to standardize the data in K-NN. We will standardize all the attributes besides cnt_bike  
+```{r}
+train_set_stand <- train_set
+test_set_stand <- test_set
+library(standardize)
+#Apply the standardization
+train_set_stand[,2:7] <- apply(train_set_stand[,2:7], MARGIN = 2, FUN = scale)
+test_set_stand[,2:7] <- apply(test_set_stand[,2:7], MARGIN = 2, FUN = scale)
+```
+  
+b) Train a k-NN model on the appropriate attributes.
+```{r}
+knn_model <- train(cnt_bike~., train_set_stand, method = "knn")
+knn_model 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

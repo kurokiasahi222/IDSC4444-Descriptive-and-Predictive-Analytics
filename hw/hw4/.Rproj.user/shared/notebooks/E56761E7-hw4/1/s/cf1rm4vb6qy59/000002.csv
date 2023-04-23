@@ -1,0 +1,14 @@
+"0","data_train_stand <- data_train"
+"0","data_test_stand <- data_test"
+"0","#load the package standardize"
+"0","library(standardize)"
+"2","
+ *********************************************************** 
+          Loading standardize package version 0.2.2          
+     Call standardize.news() to see new features/changes     
+ *********************************************************** 
+
+"
+"0","#We apply the function scale to the data_train_stand and data_test_stand"
+"0","data_train_stand[,1:16] <- apply(data_train_stand[,1:16], MARGIN = 2, FUN = scale)"
+"0","data_test_stand[,1:16] <- apply(data_test_stand[,1:16], MARGIN = 2, FUN = scale)"

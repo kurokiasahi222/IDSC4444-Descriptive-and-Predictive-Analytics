@@ -1,0 +1,8 @@
+"0","### import libraries"
+"0","library(stats)"
+"0","library(factoextra)"
+"2","Loading required package: ggplot2
+"
+"2","Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
+"
+"0","library(ggplot2)"

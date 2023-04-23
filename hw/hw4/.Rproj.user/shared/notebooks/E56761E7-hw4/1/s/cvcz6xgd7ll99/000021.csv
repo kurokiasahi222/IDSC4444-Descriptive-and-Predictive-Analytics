@@ -1,0 +1,5 @@
+"0","library(ggplot2)"
+"0","ggplot(data = credit_data, aes(x = AGE, fill = DEFAULT )) + "
+"0","  geom_histogram(alpha = 1) + "
+"0","  ggtitle(""Histogram of age by default"") + "
+"0","  labs(x = ""Age"", y = ""Count"")"

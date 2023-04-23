@@ -1,0 +1,32 @@
+{
+    "id": "8043F761",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1638134217625.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "expression": "credit_data",
+        "caption": "credit_data",
+        "totalObservations": "6480",
+        "displayedObservations": "6480",
+        "variables": "17",
+        "cacheKey": "FC55B64E",
+        "object": "credit_data",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=credit_data&cache_key=FC55B64E&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 8030879312480528756,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1638134217625,
+    "read_only": false,
+    "read_only_alternatives": []
+}

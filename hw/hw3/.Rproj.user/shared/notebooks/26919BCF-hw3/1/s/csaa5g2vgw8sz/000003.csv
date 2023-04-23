@@ -1,0 +1,4 @@
+"0","ggplot(data = telco_data, aes(x= Tenure.Months, fill = ..count..)) + "
+"0","  geom_histogram(alpha=1) + "
+"0","  ggtitle(""User Count by Total amount of months their been with Company"") + "
+"0","  labs(x = ""Months"", y = ""User Count"")"
